@@ -15,7 +15,7 @@ body{
     background-size: cover;
 }
 
-.container-login{
+.container-register{
     margin-left: auto;
     margin-right: auto;
     margin-top: 120px;
@@ -26,12 +26,12 @@ body{
 
 }
 
-.login{
+.register{
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.login-top-container{
+.register-top-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,12 +42,12 @@ body{
     margin-top: 10px;
 }
 
-.text-login{
+.text-register{
     display: flex;
 }
 
-.text-login h2{
-    font-size: 36px;
+.text-register h2{
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
 }
