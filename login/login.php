@@ -1,10 +1,13 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+<link rel="stylesheet" href="login.css">   
+<title>Login</title>
 </head>
 <body>
 
@@ -19,30 +22,30 @@
                     <a href=""><img src="img/logo.png" alt="" class="logo"></a>
                 </div>
 
-                <div class="form">
+                <form action="teste-login.php" method="post">
                     <div>
                         <label for="">Email</label><br>
-                        <input type="text">
+                        <input type="text" name="email" required>
                     </div>
                     <div>
                         <label for="">Senha</label><br>
-                        <input type="text">
+                        <input type="text" name="senha" required>
                         
                     </div>
                    
                     <a href="" class="forgot-password"> Esqueceu a senha?</a>
-                    
-                </div>
+                    <div class="container-button">
+                        
+                        <input type="submit" name="submit" class="entry" value="Entrar">
+
+                        
+                        <a href="../cadastro/cadastro.php" class="create-acount">Criar conta</a>                    
+                    </div>
+                </form>
 
 
             </div>
-            <div class="container-button">
-                <div class="enter-button">
-                    <a href=""  class="entry">Entrar</a>
-                </div>
-                <a href="../cadastro/cadastro.html" class="create-acount">Criar conta</a>
-                
-            </div>
+            
         </div>
     </div>
 </body>

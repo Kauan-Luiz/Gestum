@@ -56,12 +56,12 @@ body{
     color: #030E88;
 }
 
-.form{
+form{
     width: 100%;
     color: black;
 }
 
-.form input{
+form input{
     width: 100%;
     height: 40px;
     border-radius: 20px;
@@ -78,23 +78,26 @@ body{
 
 .container-button{
     width: 100%;
+    
 }
 
-
-.enter-button{
+.entry {
     width: 100%;
     height: 40px;
-    background-color: #030E88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 20px;
-    margin-top: 20px;
+    border: none;
+    background-color: #030E88;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
 }
 
-.entry{
-    text-decoration: none;
+.entry:hover {
+    background-color: #020A5E;
 }
+
 .create-acount{
     display: flex;
     justify-content: center;

@@ -1,5 +1,24 @@
+<?php
+include_once('../conexao.php');
+
+if(isset($_POST['submit']))
+{
+
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+
+$result = mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')");
+header("Location: ../login/login.php");
+exit();
+
+}
+
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,30 +38,30 @@
                     <a href=""><img src="img/logo.png" alt="" class="logo"></a>
                 </div>
 
-                <div class="form">
+                <form class="form" action="cadastro.php" method="POST">
+                    <div>
+                        <label for="">Usuario</label><br>
+                        <input type="text" name="nome" required>
+                    </div>
                     <div>
                         <label for="">Email</label><br>
-                        <input type="text">
+                        <input type="text" name="email" required>
                     </div>
                     <div>
                         <label for="">Senha</label><br>
-                        <input type="text">
+                        <input type="password" name="senha" required>
+
                     </div>
-                    <div>
-                        <label for="">Confirmar</label><br>
-                        <input type="text">
+
+                    <div class="enter-button">
+                        <input type="submit" value="Cadastrar" name="submit">
                     </div>
-                    
-                </div>
+                </form>
 
 
             </div>
-            <div class="container-button">
-                <div class="enter-button">
-                    <a href=""  class="entry">Entrar</a>
-                </div>
-                
-            </div>
+            
+                 
         </div>
     </div>
 </body>

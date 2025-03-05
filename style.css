@@ -1,0 +1,93 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #fff;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.logo{
+    width: 90px;
+}   
+
+article {   
+    width: 200px;
+    height: 100%;
+    background-color: #ECECEC;
+    padding: 15px;
+    color: #fff;    
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 15px;
+    
+    
+}
+
+.article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.article div:hover {
+    transform: scale(1.05);
+   
+}
+
+
+.article div img{
+    width: 30px;
+    
+    
+}
+.article a{
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+
+}
+
+main{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+main h2 {
+    font-size: 30pt;
+    color: #fff;
+}
+main img{
+    width: 100px;
+}
